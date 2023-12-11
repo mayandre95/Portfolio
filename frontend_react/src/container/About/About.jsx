@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { AppWrap, MotionWrap} from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
@@ -12,7 +12,7 @@ import { urlFor, client } from '../../client';
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
-//fetch real dynamic data 
+//fetch real dynamic data from sanity
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
@@ -35,7 +35,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <img src={urlFor(about.imgUrl).url()} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
@@ -46,7 +46,4 @@ const About = () => {
 };
 
 export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
-  'app__whitebg',
-);
+  MotionWrap(About,'app__about'),'about', "app__whitebg"); //permet un fond blanc pour cette section
