@@ -1,3 +1,4 @@
+/*
 export default {
     name:'testimonials',
     title:'Testimonials',
@@ -28,3 +29,4 @@ export default {
         }
     ]
 }
+*/

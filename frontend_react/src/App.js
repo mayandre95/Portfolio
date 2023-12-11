@@ -11,9 +11,8 @@ const App = () => (
     <About />
     <Work />
     <Skills />
-    <Testimonial />
     <Footer />
   </div>
 );
-
+//testimonial goes just above te footer
 export default App;
