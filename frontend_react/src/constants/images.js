@@ -26,6 +26,16 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import a_logo from '../assets/a_logo.png';
+import logoA from '../assets/logoA.png';
+import a_logo_ from '../assets/a_logo_.png';
+//import chimielogo from '../assets/chimielogo.png';
+//import logochimie from '../assets/logochimie.png';
+import logoAN from '../assets/logoAN.png';
+import develop_tec from '../assets/develop_tec.png';
+import circle1 from '../assets/circle1.svg';
+import circle2 from '../assets/circle2.png';
+import Andre_Mayala from '../assets/Andre_Mayala.pdf';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -36,6 +46,7 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
 export default {
+  Andre_Mayala,
   email,
   mobile,
   api,
@@ -61,7 +72,16 @@ export default {
   about04,
   profile,
   circle,
+  circle1,
+  circle2,
   logo,
+  a_logo,
+  logoA,
+  a_logo_,
+  //chimielogo,
+  //logochimie,
+  logoAN,
+  develop_tec,
   adidas,
   amazon,
   asus,

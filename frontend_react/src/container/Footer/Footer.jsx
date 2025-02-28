@@ -6,7 +6,7 @@ import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' ,});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+33 58330579" className="p-text">+33 58330579</a>
+          <a href="tel:+33 58330579" className="p-text">+33 658330579</a>
         </div>
       </div>
       {!isFormSubmitted ? (
@@ -82,5 +82,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__whitebg',
+  'app__whitebg', //darkblue
 );
